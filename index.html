@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111c35" />
+    <meta name="description" content="FounderPath is a practical operating system for building and growing a startup." />
+    <title>FounderPath — Startup operating system</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+        <div class="brand">Founder<span>Path</span></div>
+        <p class="subbrand">Your startup operating system</p>
+        <nav class="nav" id="nav">
+          <p class="nav-label">Workspace</p>
+          <button class="nav-item active" data-page="overview"><span>▦</span>Overview</button>
+          <button class="nav-item" data-page="validate"><span>⌕</span>Validate idea</button>
+          <button class="nav-item" data-page="mvp"><span>◇</span>Build MVP</button>
+          <button class="nav-item" data-page="customers"><span>♙</span>First users</button>
+          <button class="nav-item" data-page="team"><span>♧</span>Team & company</button>
+          <button class="nav-item" data-page="funding"><span>₹</span>Govt. schemes</button>
+          <button class="nav-item" data-page="finance"><span>↗</span>Cash & runway</button>
+          <button class="nav-item" data-page="scale"><span>⌁</span>Grow & scale</button>
+        </nav>
+        <div class="side-card">
+          <strong>FounderPath Mentor</strong>
+          <small>Your workspace stays saved in this browser.</small>
+          <button class="button button-primary button-full" data-action="open-mentor">Ask AI mentor →</button>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <button class="menu-button" id="menu-button" aria-label="Open navigation" aria-expanded="false">☰</button>
+          <div class="breadcrumb">Workspace / <strong id="breadcrumb">Overview</strong></div>
+          <div class="user"><span class="muted small">Demo workspace</span><div class="avatar" aria-label="FounderPath user">FP</div></div>
+        </header>
+
+        <div class="content" id="main-content">
+          <section class="page" id="page-overview" aria-labelledby="overview-title">
+            <div class="eyebrow">Founder workspace</div>
+            <div class="page-heading">
+              <div><h1 id="overview-title">Good morning, Founder <span aria-hidden="true">👋</span></h1><p class="muted">Your startup journey, in one place. Make your next move with clarity.</p></div>
+              <button class="button button-primary" data-page-link="validate">＋ Add startup idea</button>
+            </div>
+            <div class="stats-grid">
+              <article class="card stat-card"><span class="stat-label">Startup readiness</span><strong class="stat-value">62<span class="unit">/100</span></strong><span class="positive">↑ 8 points this month</span></article>
+              <article class="card stat-card"><span class="stat-label">Available cash</span><strong class="stat-value" id="overview-cash">₹5.0L</strong><span class="positive">Based on your current plan</span></article>
+              <article class="card stat-card"><span class="stat-label">Estimated runway</span><strong class="stat-value" id="overview-runway">10 months</strong><span class="positive">At current net burn</span></article>
+              <article class="card stat-card"><span class="stat-label">Customer interviews</span><strong class="stat-value" id="overview-interviews">12</strong><span class="positive">Milestone achieved ✓</span></article>
+            </div>
+            <div class="section-heading"><div><h2>Your startup journey</h2><p class="muted small">Move through milestones; revisit any stage whenever your startup needs it.</p></div><span class="badge badge-good">Stage 3 · MVP building</span></div>
+            <div class="stage-grid">
+              <button class="stage" data-page-link="validate"><span>01 · COMPLETE</span><strong>Find & validate</strong><small>Problem evidence and market demand</small></button>
+              <button class="stage" data-page-link="validate"><span>02 · COMPLETE</span><strong>Validate market</strong><small>Competition, pricing and demand</small></button>
+              <button class="stage active" data-page-link="mvp"><span>03 · IN PROGRESS</span><strong>Build the MVP</strong><small>Scope, roadmap and costs</small></button>
+              <button class="stage" data-page-link="customers"><span>04 · NEXT</span><strong>First users</strong><small>Feedback and acquisition</small></button>
+              <button class="stage" data-page-link="customers"><span>05 · READY</span><strong>Product-market fit</strong><small>Retention and repeat usage</small></button>
+              <button class="stage" data-page-link="team"><span>06 · READY</span><strong>Team & company</strong><small>People, equity and compliance</small></button>
+              <button class="stage" data-page-link="funding"><span>07 · READY</span><strong>Funding</strong><small>Scheme eligibility and readiness</small></button>
+              <button class="stage" data-page-link="scale"><span>08 · FUTURE</span><strong>Grow & scale</strong><small>Unit economics and experiments</small></button>
+            </div>
+            <div class="two-column dashboard-panels">
+              <article class="card"><div class="section-heading compact"><h2>Priority actions</h2><span class="badge badge-warn">3 need attention</span></div><div class="action-list">
+                <div class="list-row"><div><strong>Complete your MVP cost plan</strong><small>Estimate hosting, people and launch expenses.</small></div><button class="button button-secondary button-small" data-page-link="mvp">Open</button></div>
+                <div class="list-row"><div><strong>Check government scheme eligibility</strong><small>Review matching routes for your startup profile.</small></div><button class="button button-secondary button-small" data-page-link="funding">Check</button></div>
+                <div class="list-row"><div><strong>Review monthly cash burn</strong><small>See how hiring affects your runway.</small></div><button class="button button-secondary button-small" data-page-link="finance">Review</button></div>
+              </div></article>
+              <article class="card"><h2>Founder mentor insight</h2><div class="callout">Your next constraint may be execution capacity, not idea quality. Keep the MVP narrow and avoid fixed hiring commitments until usage signals improve.</div><div class="card-footer"><small class="muted">Based on your demo progress</small><button class="button button-primary button-small" data-action="open-mentor">Discuss this →</button></div></article>
+            </div>
+          </section>
+
+          <section class="page hidden" id="page-validate" aria-labelledby="validate-title">
+            <div class="eyebrow">Stage 1–2 · Discover & validate</div><h1 id="validate-title">Validate the opportunity</h1><p class="muted intro">Build a case from customer evidence, market signals and competitor gaps—not an AI guess.</p>
+            <div class="two-column"><article class="card"><h2>Problem statement builder</h2><form id="problem-form"><label>Who experiences the problem?<input id="who" value="Small local retailers" required /></label><label>What do they struggle with?<input id="what" value="Tracking orders and repeat customers" required /></label><label>Why does this happen?<textarea id="why" rows="2" required>They rely on notebooks and scattered messaging apps.</textarea></label><button class="button button-primary">Generate problem statement</button></form><div class="callout hidden result" id="problem-result" aria-live="polite"></div></article>
+              <article class="card"><h2>Customer discovery tracker</h2><div class="metric-row"><div><strong class="stat-value" id="interview-count">12</strong><small>Interviews logged</small></div><span class="badge badge-good">10 interview milestone passed</span></div><div class="progress"><span style="width:100%"></span></div><form id="interview-form"><label>Interview insight<textarea id="interview-note" rows="2" placeholder="What did the customer say?"></textarea></label><button class="button button-secondary">＋ Log interview insight</button></form><p class="footnote">Notes are stored in this browser.</p></article></div>
+            <div class="section-heading"><div><h2>Market intelligence</h2><p class="muted small">Illustrative demo evidence. Connect live sources before real-world decisions.</p></div></div><div class="three-column"><article class="card signal"><span class="badge badge-good">Demand signal</span><strong>Growing</strong><p>Search interest appears to be rising in the sample dataset.</p><div class="bar"><i style="width:76%"></i></div></article><article class="card signal"><span class="badge badge-warn">Competition</span><strong>Moderate</strong><p>Local workflow integration may be a gap.</p><div class="bar"><i style="width:54%"></i></div></article><article class="card signal"><span class="badge badge-good">Pain evidence</span><strong>Strong</strong><p>9 of 12 demo interviews described a similar workaround.</p><div class="bar"><i style="width:75%"></i></div></article></div>
+          </section>
+
+          <section class="page hidden" id="page-mvp" aria-labelledby="mvp-title">
+            <div class="eyebrow">Stage 3 · Build</div><h1 id="mvp-title">Build a focused MVP</h1><p class="muted intro">Turn your strongest evidence into the smallest testable product.</p>
+            <div class="two-column"><article class="card"><h2>MVP scope planner</h2><form id="mvp-form"><label>What are you building?<input id="mvp-idea" value="A lightweight order and customer tracker for local retailers" required /></label><button class="button button-primary">Generate MVP scope</button></form><div class="result hidden" id="mvp-result" aria-live="polite"></div></article>
+              <article class="card"><h2>Three-month cost plan</h2><div class="form-grid"><label>Build cost (one-time)<input class="cost" id="buildcost" type="number" value="45000" min="0" /></label><label>Tools / month<input class="cost" id="toolcost" type="number" value="5000" min="0" /></label><label>Marketing / month<input class="cost" id="marketcost" type="number" value="8000" min="0" /></label><label>Other / month<input class="cost" id="othercost" type="number" value="2000" min="0" /></label></div><div class="mini-grid"><div><small>One-time</small><strong id="cost-one">₹45,000</strong></div><div><small>Monthly</small><strong id="cost-month">₹15,000</strong></div><div><small>Three months</small><strong id="cost-total">₹90,000</strong></div></div></article></div>
+          </section>
+
+          <section class="page hidden" id="page-customers" aria-labelledby="customers-title"><div class="eyebrow">Stage 4–5 · Learn</div><h1 id="customers-title">Find your first users</h1><p class="muted intro">Track early adopters and turn feedback into product decisions.</p><div class="two-column"><article class="card"><h2>Add an early user</h2><form id="customer-form"><label>Name or identifier<input id="customer-name" placeholder="e.g. Retailer #25" required /></label><label>Acquisition channel<select id="customer-channel"><option>Referral</option><option>Direct outreach</option><option>Community</option><option>Landing page</option></select></label><button class="button button-primary">＋ Add customer</button></form><div class="metric-row"><div><strong class="stat-value" id="user-count">24</strong><small>Early users</small></div><span class="badge badge-good">18 active this week</span></div></article><article class="card"><h2>Classify feedback</h2><form id="feedback-form"><label>Feedback<textarea id="feedback-text" rows="3" placeholder="Paste a customer quote or observation" required></textarea></label><label>Type<select id="feedback-type"><option>Product request</option><option>Pain point</option><option>Positive signal</option><option>Objection</option></select></label><button class="button button-secondary">Classify feedback</button></form><div class="callout hidden result" id="feedback-result" aria-live="polite"></div></article></div><article class="card table-card"><h2>Recent users</h2><div class="table-wrap"><table><thead><tr><th>User</th><th>Channel</th><th>Status</th><th>Joined</th></tr></thead><tbody id="customer-table"><tr><td>Retailer #24</td><td>Referral</td><td><span class="badge badge-good">Active</span></td><td>Yesterday</td></tr><tr><td>Retailer #23</td><td>Community</td><td><span class="badge badge-good">Active</span></td><td>2 days ago</td></tr></tbody></table></div></article></section>
+
+          <section class="page hidden" id="page-team" aria-labelledby="team-title"><div class="eyebrow">Stage 6 · Foundation</div><h1 id="team-title">Set up the company thoughtfully</h1><p class="muted intro">Make clear decisions on roles, ownership and compliance before they become expensive.</p><div class="three-column"><article class="card"><span class="badge badge-good">People</span><h2>Define the bottleneck</h2><p class="muted">Write the outcome a new hire must own before writing a job description.</p></article><article class="card"><span class="badge badge-warn">Equity</span><h2>Document agreements</h2><p class="muted">Use written founder and advisor agreements reviewed by a qualified professional.</p></article><article class="card"><span class="badge badge-good">Compliance</span><h2>Choose the right structure</h2><p class="muted">Confirm registration, tax and employment requirements with an expert.</p></article></div></section>
+
+          <section class="page hidden" id="page-funding" aria-labelledby="funding-title"><div class="eyebrow">Stage 7 · Capital</div><h1 id="funding-title">Explore government schemes</h1><p class="muted intro">Use your profile to create a shortlist, then verify every rule on the official portal.</p><article class="card"><form id="scheme-form" class="form-grid"><label>State<select id="state"><option>Karnataka</option><option>Maharashtra</option><option>Telangana</option><option>Tamil Nadu</option></select></label><label>Sector<select id="sector"><option>Technology</option><option>Retail</option><option>Manufacturing</option><option>Social impact</option></select></label><label>Stage<select id="stage"><option>Idea</option><option>MVP</option><option>Early revenue</option></select></label><label>Registered?<select id="registered"><option>Not yet</option><option>Yes</option></select></label><button class="button button-primary">Find matching routes</button></form><div id="scheme-results" class="result" aria-live="polite"><div class="callout">No automated eligibility claim is made. Current programme rules and application windows must be checked on official portals.</div></div></article></section>
+
+          <section class="page hidden" id="page-finance" aria-labelledby="finance-title"><div class="eyebrow">Finance cockpit</div><h1 id="finance-title">Understand your cash runway</h1><p class="muted intro">Use conservative assumptions to decide what you can afford next.</p><div class="two-column"><article class="card"><h2>Monthly assumptions</h2><div class="form-grid"><label>Cash available<input class="finance-input" id="cash" type="number" value="500000" min="0" /></label><label>Monthly revenue<input class="finance-input" id="revenue" type="number" value="0" min="0" /></label><label>Monthly expenses<input class="finance-input" id="expenses" type="number" value="50000" min="0" /></label><label>One-time spend<input class="finance-input" id="oneoff" type="number" value="0" min="0" /></label></div><button class="button button-primary" id="calculate-button">Calculate runway</button><div class="mini-grid finance-results"><div><small>Net burn</small><strong id="netburn">₹50,000</strong></div><div><small>Runway</small><strong id="runway">10.0 months</strong></div><div><small>Cash after one-time</small><strong id="cashleft">₹5,00,000</strong></div></div></article><article class="card"><h2>Hiring stress test</h2><div class="form-grid"><label>New monthly cost<input id="hire-cost" type="number" value="60000" min="0" /></label><label>Expected revenue lift<input id="hire-revenue" type="number" value="25000" min="0" /></label></div><button class="button button-secondary" id="simulate-button">Simulate hire</button><div id="hire-result" class="result"></div><div class="callout warning" id="runway-alert">Update assumptions to see your runway guidance.</div></article></div></section>
+
+          <section class="page hidden" id="page-scale" aria-labelledby="scale-title"><div class="eyebrow">Stage 8 · Scale</div><h1 id="scale-title">Grow with healthy economics</h1><p class="muted intro">Scale the parts of the business that are repeatable, measurable and profitable.</p><div class="three-column"><article class="card"><span class="badge badge-good">Retention</span><h2>Measure repeat use</h2><p class="muted">Pick one cohort metric and review it every week.</p></article><article class="card"><span class="badge badge-warn">Acquisition</span><h2>Test one channel</h2><p class="muted">Run a small experiment before adding more spend.</p></article><article class="card"><span class="badge badge-good">Economics</span><h2>Protect contribution margin</h2><p class="muted">Know your payback period before scaling acquisition.</p></article></div></section>
+        </div>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <div class="modal-backdrop hidden" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal"><button class="close-button" data-action="close-modal" aria-label="Close mentor">×</button><div id="modal-body"></div></div></div>
+    <noscript><div class="noscript">FounderPath needs JavaScript enabled to switch between workspace sections.</div></noscript>
+  </body>
+</html>
